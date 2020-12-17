@@ -1,12 +1,1 @@
-{
-  "env": {
-    "MY_KEY": "TMDB_KEY",
-    "SECRET": "44088e84e9ff318b1ee21a443fdb5356"
-  },
-  "build": {
-    "env": {
-      "MY_KEY": "TMDB_KEY",
-      "SECRET": "44088e84e9ff318b1ee21a443fdb5356"
-    }
-  }
-}
+{}

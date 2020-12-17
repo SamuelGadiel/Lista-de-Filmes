@@ -12,7 +12,7 @@ function Adiciona() {
 
     if (request.length > 0) {
       fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_KEY}&language=pt-BR&page=1&include_adult=false&query=${request}`,
+        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=pt-BR&page=1&include_adult=false&query=${request}`,
       )
         .then((res) => res.json())
         .then((data) => {
