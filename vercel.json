@@ -1,1 +1,6 @@
-{}
+{
+  "env": {
+    "MY_KEY": "TMDB_KEY",
+    "SECRET": "@chave_tmdb"
+  }
+}
