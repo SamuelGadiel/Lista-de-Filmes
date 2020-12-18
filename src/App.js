@@ -10,10 +10,14 @@ import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
+    // Global Provider cuida dos estados de todos os componentes.
     <GlobalProvider>
 
       <Router>
+        {/* Header do site, aparece em todas as paginas */}
         <Header />
+
+        {/* Switch que direciona para as rotas do site */}
         <Switch>
 
           <Route exact path="/">

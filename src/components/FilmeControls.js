@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 
+// Função que gera os icones de controle dos cards.
 function FilmeControls({ filme, tipo }) {
+  // Cada botão tem uma respectiva função.
+  // Aqui essas funções são obtidas do contexto geral
   const {
     removeFilmeLista,
     addFilmeAssistido,
@@ -11,6 +14,10 @@ function FilmeControls({ filme, tipo }) {
 
   return (
     <div className="inner-card-controls">
+      {/* Se o tipo for "lista" quer dizer que se trata dos cards na tela inicial
+          onde são mostrados os filmes que ainda serão assistidos
+          Com isso mostra um botão para marcar o filme como assistido e outro para
+          remover o filme da lista. */}
       {tipo === 'lista' && (
         <>
           <button
@@ -29,6 +36,9 @@ function FilmeControls({ filme, tipo }) {
         </>
       )}
 
+      {/* O tipo "assistidos" se refere a pagina de filmes que já foram
+          assistidos, com isso é possivel marcar o filme como não assistido
+          ou remove-lo da lista de assistidos. */}
       {tipo === 'assistidos' && (
         <>
           <button
