@@ -11,9 +11,8 @@ function Adiciona() {
     setBusca(request);
 
     if (request.length > 0) {
-      console.log(process.env.REACT_APP_TMDB_KEY);
       fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=pt-BR&page=1&include_adult=false&query=${request}`,
+        `https://api.themoviedb.org/3/search/movie?api_key=44088e84e9ff318b1ee21a443fdb5356&language=pt-BR&page=1&include_adult=false&query=${request}`,
       )
         .then((res) => res.json())
         .then((data) => {
